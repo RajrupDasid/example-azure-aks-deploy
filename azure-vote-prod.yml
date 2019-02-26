@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: azure-vote-front
-        image: csemsftatlassian/azure-vote-front:{{version}}
+        image: mspipes/azure-vote-front:{{version}}
         resources:
           requests:
             cpu: 100m

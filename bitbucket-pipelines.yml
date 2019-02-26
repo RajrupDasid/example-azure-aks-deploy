@@ -19,13 +19,13 @@ pipelines:
         script:
           - sed -i "s/azure-vote-front:{{version}}/azure-vote-front:$BITBUCKET_BUILD_NUMBER/g" azure-vote-prod.yml
           - cat azure-vote-prod.yml
-          - pipe: microsoft/azure-aks-deploy:0.3.0
+          - pipe: microsoft/azure-aks-deploy:1.0.0
             variables:
               AZURE_APP_ID: $AZURE_APP_ID
               AZURE_PASSWORD: $AZURE_PASSWORD
               AZURE_TENANT_ID: $AZURE_TENANT_ID
-              AZURE_AKS_NAME: $AZURE_AKS_NAME
-              AZURE_RESOURCE_GROUP: $AZURE_RESOURCE_GROUP
+              AZURE_AKS_NAME: "my-cluster-create"
+              AZURE_RESOURCE_GROUP: "my-resource-delete"
               KUBECTL_COMMAND: 'apply'
               KUBERNETES_SPEC_FILE: 'azure-vote-prod.yml'
 
