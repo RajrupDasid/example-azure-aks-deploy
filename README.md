@@ -44,12 +44,10 @@ To walk through a complete experience where this code is packaged into container
 
 ## Support
 
-If you’d like help with this pipe, or you have an issue or feature request, [let us know on community][community].
+If you’d like help with this pipe, or you have an issue or feature request, please contact [bitbucketpipes@microsoft.com](mailto:bitbucketpipes@microsoft.com).
 
 If you’re reporting an issue, please include:
 
 * the version of the pipe
 * relevant logs and error messages
 * steps to reproduce
-
-[community]: https://community.atlassian.com/t5/forums/postpage/choose-node/true/interaction-style/qanda?add-tags=bitbucket-pipelines,pipes,azure
